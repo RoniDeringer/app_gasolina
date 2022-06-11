@@ -1,0 +1,64 @@
+Container(
+          margin: const EdgeInsets.only(top: 200.0),
+          padding: EdgeInsets.all(20),
+          height: 100,
+          width: double.infinity,
+          color: Colors.transparent,
+          child: Container(
+              decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      color:
+                          Color.fromARGB(255, 124, 122, 122).withOpacity(0.5),
+                      spreadRadius: 2,
+                      blurRadius: 10,
+                      offset: Offset(0, 3), // changes position of shadow
+                    ),
+                  ],
+                  gradient: LinearGradient(
+                    begin: Alignment.topCenter,
+                    end: Alignment.bottomCenter,
+                    colors: [
+                      Color.fromARGB(255, 255, 255, 255),
+                      Color.fromARGB(255, 255, 255, 255),
+                    ],
+                  ),
+                  borderRadius: BorderRadius.only(
+                    topLeft: const Radius.circular(40.0),
+                    topRight: const Radius.circular(40.0),
+                    bottomLeft: const Radius.circular(40.0),
+                    bottomRight: const Radius.circular(40.0),
+                  )),
+              child: ListView(
+                children: <Widget>[
+                  Row(
+                    children: [
+                      Container(
+                        height: 0,
+                      ),
+                      Text("Janeiro",
+                          textAlign: TextAlign.right,
+                          style:
+                              TextStyle(fontFamily: 'roboto', fontSize: 18.5)),
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      Container(
+                        height: 0,
+                      ),
+                      Text(
+                        "R99,90",
+                          
+                          textAlign: TextAlign.left,
+                          style: TextStyle(
+                              // wordSpacing: 100.0,
+                              fontFamily: 'roboto',
+                              fontSize: 18.5,
+                              color: Color.fromARGB(115, 93, 99, 93))),
+                    ],
+                  )
+                ],
+              )),
+        
