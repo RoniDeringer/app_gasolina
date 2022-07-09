@@ -1,11 +1,12 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
 
 import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-
 import 'app_controller.dart';
+
+
+
 
 class HomePage extends StatefulWidget {
   // precisa de um estado
@@ -79,6 +80,11 @@ class HomePageState extends State<HomePage> {
           child: Padding(
             padding: const EdgeInsets.all(8.0),
             child: Column(
+              ExpansionPanelList(
+                  animationDuration: Duration(seconds: 2),
+                  dividerColor: Colors.pink,
+                  elevation: 1,
+                  expandedHeaderPadding: EdgeInsets.all(8),
               children: [
                 Card(
                   child: Padding(
@@ -95,95 +101,6 @@ class HomePageState extends State<HomePage> {
                     ),
                   ),
                 ),
-                Card(
-                  child: Padding(
-                    padding: EdgeInsets.all(8),
-                    child: Column(
-                      children: [
-                        ListTile(
-                          title: Text('Fevereiro'),
-                          subtitle: Text('550,00'),
-                          leading: Icon(Icons.keyboard_arrow_right_rounded),
-                          trailing: Text('19:20'),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-                Card(
-                  child: Padding(
-                    padding: EdgeInsets.all(8),
-                    child: Column(
-                      children: [
-                        ListTile(
-                          title: Text('Março'),
-                          subtitle: Text('190,99'),
-                          leading: Icon(Icons.keyboard_arrow_right_rounded),
-                          trailing: Text('08:00'),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-                Card(
-                  child: Padding(
-                    padding: EdgeInsets.all(8),
-                    child: Column(
-                      children: [
-                        ListTile(
-                          title: Text('Abril'),
-                          subtitle: Text('549,21'),
-                          leading: Icon(Icons.keyboard_arrow_right_rounded),
-                          trailing: Text('22:50'),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-                Card(
-                  child: Padding(
-                    padding: EdgeInsets.all(8),
-                    child: Column(
-                      children: [
-                        ListTile(
-                          title: Text('Maio'),
-                          subtitle: Text('340,25'),
-                          leading: Icon(Icons.keyboard_arrow_right_rounded),
-                          trailing: Text('16:15'),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-                Card(
-                  child: Padding(
-                    padding: EdgeInsets.all(8),
-                    child: Column(
-                      children: [
-                        ListTile(
-                          title: Text('Junho'),
-                          subtitle: Text('241,56'),
-                          leading: Icon(Icons.keyboard_arrow_right_rounded),
-                          trailing: Text('09:50'),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-                Card(
-                  child: Padding(
-                    padding: EdgeInsets.all(8),
-                    child: Column(
-                      children: [
-                        ListTile(
-                          title: Text('Julho'),
-                          subtitle: Text('156,92'),
-                          leading: Icon(Icons.keyboard_arrow_right_rounded),
-                          trailing: Text('23:30'),
-                        ),
-                      ],
-                    ),
-                  ),
                 ),
               ],
             ),

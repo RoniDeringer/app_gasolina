@@ -1,24 +1,30 @@
 # app_gasolina
+__ 
 
-* projeto flutter pra controle de gastos
+## 🚀 About
 
-___
-- Rodar sem o debbuger:
-    - pelo terminal entrar na `app/lib`
-    - rodar: `flutter run`
+Pequeno projeto de flutter pra desenvolver novas habilidades com a linguagem dart e sdk Flutter
 
-____
-- Alterar o nome do app:
-    - entrar no dir.: `AndroidManifest.xml`
-    - procurar: `android:label`
-___
-- Alterar icones: [aqui](https://acervolima.com/flutter-alterando-o-icone-do-aplicativo/)
-____
- - Criar um projeto com path diferente
-    - na playStore precisa ser diferente os nomes
-    - dessa forma de criação, ele define um nome diferente
-    `flutter create --org Roni_projects`
 
+## 💻 Rodando o projeto
+
+## 🛠️ Configurações do projeto
+
+### Run code
+- pelo terminal entrar na `app/lib`
+- rodar: `flutter run`
+
+### Alterar o nome do app:
+- entrar no dir.: `AndroidManifest.xml`
+- procurar: `android:label`
+
+###  Alterar icones: 
+- Temos o [link](https://acervolima.com/flutter-alterando-o-icone-do-aplicativo/)
+- Colocar nas respectivas pastas e alterar nome do arquivo
+
+### Criar um projeto com path diferente
+- na playStore precisa ser diferente os nomes
+- dessa forma de criação, ele define um nome diferente `flutter create --org Roni_projects`
 
 ___
  - Geralmente se tem um: `MaterialApp`
