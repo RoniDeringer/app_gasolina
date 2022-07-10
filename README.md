@@ -8,11 +8,13 @@ Pequeno projeto de flutter pra desenvolver novas habilidades com a linguagem dar
 
 ## 💻 Rodando o projeto
 
-## 🛠️ Configurações do projeto
-
 ### Run code
 - pelo terminal entrar na `app/lib`
 - rodar: `flutter run`
+
+## 🛠️ Configurações do projeto
+
+
 
 ### Alterar o nome do app:
 - entrar no dir.: `AndroidManifest.xml`
